@@ -43,8 +43,8 @@ public class Application {
         List<Database> databases = new ArrayList<>();
 
         databases.add(new MapdDatabase());
-        databases.add(new CalciteDatabase());
         databases.add(new PostgresDatabase());
+        databases.add(new CalciteDatabase());
 
         return databases;
     }
