@@ -95,7 +95,9 @@ public class Application {
 
                 float avgTime = timeRes / numResults;
 
-                writer.write(database.getClass() + "\t" + avgTime + "\n");
+                String avgTimeStr = Float.toString(avgTime).replace('.', ',');
+
+                writer.write(database.getClass() + "\t" + avgTimeStr + "\n");
             }
 
             writer.write("\n");
